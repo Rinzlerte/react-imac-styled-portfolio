@@ -1,4 +1,4 @@
-import useWindwStore from "@store/window";
+import useWindowStore from "@store/window";
 import { useLayoutEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -8,7 +8,7 @@ const WindowWrapper = (Component, windowKey) => {
 
   const Wrapped = (props) => {
     const ref = useRef(null);
-    const { focusWindow, windows } = useWindwStore();
+    const { focusWindow, windows } = useWindowStore();
     const { isOpen = false, zIndex = 0 } = windows[windowKey];
 
     useGSAP(() => {

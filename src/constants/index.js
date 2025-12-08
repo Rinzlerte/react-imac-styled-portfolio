@@ -188,19 +188,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal-omg.jpg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/adrian-2.jpg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/conf-me.jpg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/adrian-3.jpg",
   },
 ];
 

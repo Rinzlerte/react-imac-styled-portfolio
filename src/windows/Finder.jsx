@@ -37,9 +37,7 @@ const Finder = () => {
     if(item.fileType === "pdf") return openWindow("resume");
     if(item.kind === "folder") return setActiveLocation(item);
     if(["fig", "url"].includes(item.fileType) && item.href) return window.open(item.href, "_blank");
- 
-    console.log(item.fileType, item)
-    openWindow(`${item.fileType}${item.kind}`, item)
+    openWindow(`${item.fileType}${item.kind}`, item);
 };
 
   return (
