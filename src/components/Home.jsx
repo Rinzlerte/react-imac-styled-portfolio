@@ -2,7 +2,6 @@ import { locations } from "@constants";
 import { useGSAP } from "@gsap/react";
 import clsx from "clsx";
 import { Draggable } from "gsap/Draggable";
-
 import useWindowStore from "@store/window";
 import useLocationStore from "@store/location";
 
@@ -23,7 +22,6 @@ const Home = () => {
 
   return (
     <section id="home">
-
         <ul>
             {
                 projects?.map((project)=>(

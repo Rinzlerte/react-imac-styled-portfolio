@@ -22,7 +22,6 @@ const ImageWithContent = () => {
             <img src={imageUrl} alt={name} className="w-full h-auto rounded" />
           </div>
         ) : null}
-
       </div>
     </>
   );

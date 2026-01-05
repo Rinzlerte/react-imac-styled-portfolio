@@ -9,6 +9,7 @@ const Contact = () => {
         <WindowControls target="contact" />
         <h2>Contact Me</h2>
     </div>
+
     <div className="p-5 space-y-5">
         <img src="/images/adrian.jpg"  alt="serg" className="w-20 rounded-full"/>
         <h3>
@@ -19,7 +20,7 @@ const Contact = () => {
         </p>
         <ul> 
             {
-                socials.map(({id, bg, link, icon, text}) => (
+                socials?.map(({id, bg, link, icon, text}) => (
                     <li key={id} style={{
                         backgroundColor: bg
                     }}>

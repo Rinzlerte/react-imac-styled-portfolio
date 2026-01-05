@@ -1,6 +1,7 @@
 import { navIcons, navLinks } from "@constants";
 import useWindowStore from "@store/window";
 import dayjs from "dayjs";
+import {NAVBAR_TITLE} from '@constants';
 
 const Navbar = () => {
     const { openWindow } = useWindowStore();
@@ -8,7 +9,7 @@ const Navbar = () => {
     <nav>
         <div>
             <img src="/images/logo.svg"  alt="logo"/>
-            <p className="font-bol">Viktor Niko</p>
+            <p className="font-bol">{NAVBAR_TITLE}</p>
             <ul>
                {
                 navLinks.map(({id, name, type})=>(
@@ -21,7 +22,6 @@ const Navbar = () => {
                }
             </ul>
         </div>
-
         <div>
             <ul>
                 {navIcons.map(({id, img})=>(
@@ -32,7 +32,6 @@ const Navbar = () => {
             </ul>
             <time>{dayjs().format('ddd MMM D h:mm A')}</time>
         </div>
-        
     </nav>
   )
 }
